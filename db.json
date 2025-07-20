@@ -1,0 +1,39 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Ana Costa",
+      "email": "ana.costa@example.com",
+      "phones": [{ "id": "p1", "number": "(34) 99999-1111" }],
+      "addresses": [{ "id": "a1", "street": "Rua das Flores, 123", "city": "Uberlândia" }]
+    },
+    {
+      "id": "2",
+      "name": "Bruno Moreira",
+      "email": "bruno.m@example.com",
+      "phones": [{ "id": "p2", "number": "(34) 99999-2222" }],
+      "addresses": []
+    },
+    {
+      "id": "3",
+      "name": "Carlos Silva",
+      "email": "carlos.silva@example.com",
+      "phones": [{ "id": "p3", "number": "(11) 98888-3333" }],
+      "addresses": []
+    },
+    {
+      "id": "4",
+      "name": "Daniela Rocha",
+      "email": "daniela.rocha@example.com",
+      "phones": [{ "id": "p4", "number": "(21) 97777-4444" }],
+      "addresses": [{ "id": "a2", "street": "Av. Atlântica, 456", "city": "Rio de Janeiro" }]
+    },
+    {
+      "id": "5",
+      "name": "Eduardo Lima",
+      "email": "eduardo.lima@example.com",
+      "phones": [{ "id": "p5", "number": "(31) 96666-5555" }],
+      "addresses": []
+    }
+  ]
+}
