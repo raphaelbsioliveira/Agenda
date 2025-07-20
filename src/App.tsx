@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ContactListPage from "./pages/ContactListPage/ContactListPage";
+import AddContactPage from "./pages/AddContactPage/AddContactPage";
+import { EditContactPage } from "./pages/EditContactPage/EditContactPage";
+import { Toast } from "./components/Toast/Toast";
+import { GlobalStyle } from "./App.styles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ContactListPage />} />
+          <Route path="/adicionar" element={<AddContactPage />} />
+          <Route path="/editar/:id" element={<EditContactPage />} />
+        </Routes>
+      </BrowserRouter>
+      <Toast />
+    </>
   );
 }
 
